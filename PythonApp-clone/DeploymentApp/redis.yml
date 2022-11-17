@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: redis-Deployment
+  name: redis-deployment
   namespace: final-task
   labels:
     app: redis
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: redis
-        image: 
+        image: gcr.io/final-proj-fadel/redis 
         ports:
         - containerPort: 6379
 

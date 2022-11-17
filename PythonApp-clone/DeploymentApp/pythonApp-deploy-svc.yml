@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: python-app-Deployment
+  name: python-app-deployment
   namespace: final-task
   labels:
     app: python-app
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: python-app
-        image: 
+        image: gcr.io/final-proj-fadel/python-app 
         ports:
         - containerPort: 80
         env:
