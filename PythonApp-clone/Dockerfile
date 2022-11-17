@@ -6,7 +6,7 @@ WORKDIR /home/pythonApp
 
 #redis and tornado librarys which provided through the requirements file attched in app repo
 COPY requirements.txt .
-RUN pip instal -r requirements.txt
+RUN pip install -r requirements.txt
 
 COPY . .
 
